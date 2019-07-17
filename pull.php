@@ -1,10 +1,9 @@
 <?php
 function execPrint($command) {
-	echo $command;
     $result = array();
     exec($command, $result);
     foreach ($result as $line) {
-        print($line . "\n");
+        print($line . "<br>");
     }
 }
 // Print the exec output inside of a pre element
